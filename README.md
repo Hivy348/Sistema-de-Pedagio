@@ -17,20 +17,31 @@ O sistema precisava ser composto por:
   |__ salvar.py  
   |__ main.py  
 
-  # Herança  
-  - Classe Carro - Valor fixo do pedágio: R$ 12,00  
-  - Classe Moto - Valor fixo do pedágio: R$ 6,00  
-  - Classe Caminhao - Valor fixo do pedágio: R$ 10,00 por eixo  
+  # Herança(veiculos.py)
+  - Método construtor com placa, modelo e eixos
+  - Função calcular pedágio sem nenhum atributo
+  - Subclasses:
+    Herda o método construtor
+    Classe Carro - Valor fixo do pedágio: R$ 12,00 em calcular pedagio  
+    Classe Moto - Valor fixo do pedágio: R$ 6,00 em calcular pedágio    
+    Classe Caminhão - Valor fixo do pedágio: R$ 10,00 por eixo em calcular pedágio   
 
-    # Persistência  
-    Criar um arquivo .txt em salvar.py contendo data e hora, lista de veículos e total arrecadado.  
-
-    # Arquivo Principal(main.py)  
-    Exibir o relatório com:  
-    - Placa  
-    - Modelo    
-    - Tipo    
-    - Valor Pago    
-    - Total Arrecadado  
-    - Quantidade de Veículos  
-  
+    # Persistência(salvar.py)     
+    - Cria um arquivo .txt contendo data e hora, lista de veículos e total arrecadado.
+    - Importa a biblioteca datetime e os arquivos veiculos.py e pedagio.py
+    
+    # Pedagio.py
+    - Método construtor com self.veiculo e self.total_arrecadado
+    - Registrar_veiculo com data e hora, adição do veiculo e calculo do total arrecadado
+    - Mostrar_relatorio com um laço for imprimindo placa, modelo, eixo, data e hora
+    - Imprimi quantidade de veiculos e total arrecadado
+    
+    # Arquivo Principal(main.py)    
+    - Cores(vermelho, verde, amarelo, roxo, ciano, negrito, reset)   
+    - Criação da praça
+    - Registrar Carro(placa, modelo, eixos)  
+    - Registrar Caminhão(placa, modelo, eixos)      
+    - Registrar Moto(placa, modelo, eixos)        
+    - Mostrar Relatório(numeração, placa, modelo, eixos, quantidade de veículos, total arrecadado)  
+    - Salvar relatório    
+    - Encerrar    
