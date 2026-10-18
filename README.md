@@ -20,7 +20,7 @@ O sistema precisava ser composto por:
   # Herança(veiculos.py)
   - Método construtor com placa, modelo e eixos
   - Função calcular pedágio sem nenhum atributo
-  - Subclasses:
+  - Subclasses:  
     Herda o método construtor
     Classe Carro - Valor fixo do pedágio: R$ 12,00 em calcular pedagio  
     Classe Moto - Valor fixo do pedágio: R$ 6,00 em calcular pedágio    
