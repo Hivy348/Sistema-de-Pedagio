@@ -21,7 +21,7 @@ O sistema precisava ser composto por:
   - Método construtor com placa, modelo e eixos
   - Função calcular pedágio sem nenhum atributo
   - Subclasses:  
-    Herda o método construtor
+    Herda o método construtor  
     Classe Carro - Valor fixo do pedágio: R$ 12,00 em calcular pedagio  
     Classe Moto - Valor fixo do pedágio: R$ 6,00 em calcular pedágio    
     Classe Caminhão - Valor fixo do pedágio: R$ 10,00 por eixo em calcular pedágio   
